@@ -25,6 +25,9 @@ To use Markdown
 
 	  #{fn.printfootnotes}
 
+(Notice that the file itself is a .haml file, so that we can call ruby methods.
+Inspired from [Maldini](https://github.com/etc/nesta-plugin-maldini), thanks to
+the author.)
 
 ## License
 
