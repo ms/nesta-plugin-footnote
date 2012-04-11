@@ -1,0 +1,37 @@
+#Nesta Plugin Footnote
+
+## Installation
+
+Add
+
+	gem 'nesta-plugin-footnote', :git => "git://github.com/ms/nesta-plugin-footnote.git"
+
+to your Gemfile and run
+
+	bundle
+
+## Usage
+
+To use Markdown
+	
+	- fn = Nesta::Plugin::Footnote::Footnotes.new
+
+	%h1 Example
+
+	:markdown
+
+	  This is a test of the footnote functionality #{fn.footnote("Does this work?")}. If
+	  it works, I'll be pretty darn happy. #{fn.footnote("It'll be awesome!")}
+
+	  #{fn.printfootnotes}
+
+
+## License
+
+MIT
+
+## Contributions
+
+Welcome and probably needed. Fork and submit a pull request.
+
+Cheers.
